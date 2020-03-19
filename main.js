@@ -7,7 +7,40 @@ const coloredSquare = document.querySelectorAll(".square");
 
 
 const currentColor = document.querySelector(".current-brush");
-const clickOne = function(){
-    scurrentColor.classList.remove(currentSelection.classList[1]);
+
+
+const clickPink = function(){
+    currentColor.classList.remove(currentColor.classList[1]);
     currentColor.classList.add('color-1');
+
 };
+pinky.addEventListener('click', clickPink);
+
+const clickPaleGold = function(){
+    currentColor.classList.remove(currentColor.classList[1]);
+    currentColor.classList.add('color-2');
+
+};
+paleGoldenrod.addEventListener('click', clickPaleGold)
+
+const clickYellow = function(){
+    currentColor.classList.remove(currentColor.classList[1]);
+    currentColor.classList.add('color-3');
+
+};
+yellowGreen.addEventListener('click', clickYellow)
+
+
+const ClickBlue = function(){
+    currentColor.classList.remove(currentColor.classList[1]);
+    currentColor.classList.add('color-4');
+};
+ lightblue.addEventListener('click', ClickBlue);
+
+ const clickWhite = function(){
+
+    currentColor.classList.remove(currentColor.classList[1]);
+    currentColor.classList.add('color-5')
+ }
+
+ white.addEventListener('click', clickWhite)
