@@ -3,10 +3,13 @@ const paleGoldenrod = document.querySelector(".color-2");
 const yellowGreen = document.querySelector(".color-3");
 const lightblue = document.querySelector(".color-4");
 const white = document.querySelector(".color-5");
+
 const coloredSquare = document.querySelectorAll(".square");
 
-
 const currentColor = document.querySelector(".current-brush");
+
+
+
 
 
 const clickPink = function(){
@@ -43,4 +46,13 @@ const ClickBlue = function(){
     currentColor.classList.add('color-5')
  }
 
- white.addEventListener('click', clickWhite)
+ white.addEventListener('click', clickWhite);
+
+ const clickColor = function(event){
+    event.target.classList.remove(event.target.classList[1]);
+    event.target.classList.add(currentColor.classList[1]);
+}
+for (const element of coloredSquare){
+element.addEventListener('click',clickColor);
+}
+
