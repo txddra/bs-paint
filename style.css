@@ -18,16 +18,22 @@ text-align: center;
 .paint {
   height: 500px;
 display: flex; 
+/* justify-content: space-evenly; */
 flex-direction: column;
 align-items: center;
 }
 
 .palette {
   display: flex;
+  flex-direction: row;
+
+
 }
 
 .brush {
 display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .icon {
@@ -45,7 +51,7 @@ display: flex;
 display: grid;
 grid-template-columns: repeat(10, 1fr) ;
 grid-template-rows:repeat(10, 1fr) ;
-height: 300px;
+height: 400px;
 width: 400px;
 border: 1px solid black;
 }
